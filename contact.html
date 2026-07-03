@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Staying Close</title>
+<meta name="google-adsense-account" content="ca-pub-4918003637458564">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4918003637458564" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#13213D;--parchment-soft:#FBF6EC;--gold:#C9A227;--gold-bright:#E3C158;--line:rgba(201,162,39,0.25);}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--ink);color:var(--parchment-soft);font-family:'Crimson Text',serif;min-height:100vh;}
+  nav{background:rgba(13,24,48,0.95);border-bottom:1px solid var(--line);padding:14px 24px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+  .nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-bright);font-weight:600;text-decoration:none;margin-right:auto;}
+  nav a{font-family:'EB Garamond',serif;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,233,210,0.7);text-decoration:none;}
+  nav a:hover,nav a.active{color:var(--gold-bright);}
+  .wrap{max-width:680px;margin:0 auto;padding:56px 24px 96px;}
+  .eyebrow{font-family:'EB Garamond',serif;letter-spacing:0.22em;text-transform:uppercase;font-size:0.78rem;color:var(--gold-bright);display:flex;align-items:center;gap:14px;margin-bottom:18px;}
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--line);}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(1.8rem,5vw,2.6rem);color:#FBF6EC;margin-bottom:16px;}
+  .subtitle{font-size:1.1rem;line-height:1.75;color:rgba(243,233,210,0.75);margin-bottom:44px;font-style:italic;}
+  label{display:block;font-family:'EB Garamond',serif;letter-spacing:0.1em;text-transform:uppercase;font-size:0.78rem;color:var(--gold);margin-bottom:8px;margin-top:24px;}
+  input,textarea{width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--line);color:var(--parchment-soft);font-family:'Crimson Text',serif;font-size:1.05rem;padding:14px 16px;outline:none;resize:vertical;}
+  textarea{min-height:140px;}
+  .submit-btn{margin-top:28px;background:var(--gold);color:#0D1830;font-family:'EB Garamond',serif;letter-spacing:0.12em;text-transform:uppercase;font-size:0.85rem;padding:14px 32px;border:none;cursor:pointer;font-weight:600;width:100%;}
+  .success-msg{display:none;margin-top:24px;padding:18px 20px;border:1px solid var(--gold);background:rgba(201,162,39,0.08);color:var(--gold-bright);font-family:'EB Garamond',serif;font-size:1rem;}
+  .contact-info{margin-top:52px;padding-top:36px;border-top:1px solid var(--line);}
+  .contact-info h2{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--gold-bright);margin-bottom:14px;}
+  .contact-info p{font-size:1.05rem;line-height:1.75;color:rgba(243,233,210,0.8);margin-bottom:10px;}
+  .ad-slot{border:1px dashed rgba(201,162,39,0.35);color:rgba(243,233,210,0.35);font-family:'EB Garamond',serif;text-transform:uppercase;font-size:0.72rem;text-align:center;padding:28px 16px;margin:40px 0;}
+  footer{margin-top:60px;padding-top:28px;border-top:1px solid var(--line);font-size:0.78rem;color:rgba(243,233,210,0.35);font-family:'EB Garamond',serif;}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Staying Close</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="privacy-policy.html">Privacy</a>
+</nav>
+<div class="wrap">
+  <div class="eyebrow">Get in Touch</div>
+  <h1>Contact Us</h1>
+  <p class="subtitle">We would love to hear from you — whether you have a question, a prayer request, a topic you would like to see covered, or simply want to share how a devotional spoke to you.</p>
+  <div>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Enter your email">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" placeholder="What is this about?">
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Write your message here..."></textarea>
+    <button class="submit-btn" onclick="handleSubmit()">Send Message</button>
+    <div class="success-msg" id="successMsg">Thank you for reaching out. We will get back to you as soon as possible. God bless you!</div>
+  </div>
+  <div class="ad-slot">Ad Space — Contact Page Banner</div>
+  <div class="contact-info">
+    <h2>Other Ways to Reach Us</h2>
+    <p>If you prefer email, you can write to us directly at <strong style="color:#E3C158;">petersjoy113@gmail.com</strong></p>
+    <p>We read every message and try to respond within a few days. Please note that we are a small independent site, so responses may take a little time — but we genuinely appreciate every person who takes the time to write.</p>
+    <p>If you have a verse or topic you would like to see featured in a future devotional, we especially love hearing those suggestions. This site grows because of readers like you.</p>
+  </div>
+  <footer style="margin-top:48px;padding-top:28px;border-top:1px solid var(--line);">© Staying Close. Built to help you draw near to God, one day at a time.</footer>
+</div>
+<script>
+function handleSubmit(){
+  const name=document.getElementById('name').value;
+  const email=document.getElementById('email').value;
+  const message=document.getElementById('message').value;
+  if(!name||!email||!message){alert('Please fill in your name, email, and message before sending.');return;}
+  document.getElementById('successMsg').style.display='block';
+  document.getElementById('name').value='';
+  document.getElementById('email').value='';
+  document.getElementById('subject').value='';
+  document.getElementById('message').value='';
+}
+</script>
+</body>
+</html>
